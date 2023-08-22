@@ -2509,8 +2509,8 @@ class transmission_network:
             try:
                 import hppy as hy
             except ImportError:
-                raise ImportError("Optional dependencies not found. please install the 'edgefiltering' extras to use this function: pip install hivclustering[edgefiltering]")
-
+                raise ImportError(
+                    "Optional dependencies not found. Please install the 'edgefiltering' extras to use this function: pip install hivclustering[edgefiltering]")
             hy_instance = hy.HyphyInterface()
 
         script_path = os.path.realpath(__file__)
